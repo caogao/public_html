@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+<!-- TODO: figure out how to deal with 640p resolution
+-->
+
 <!--
 	Prologue by HTML5 UP
 	html5up.net | @n33co
@@ -34,7 +37,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image"><img src="images/profile.jpg" alt="" /></span>
+							<span class="image avatar96"><img src="images/profile.jpg" alt="" /></span>
 <!--							<span class="image avatar48"><img src="images/profile.jpg" alt="" /></span> -->
 							<h1 id="title">Cao Gao</h1>
 							<h4>University of Michigan</h4>
@@ -58,8 +61,8 @@
 							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Education</span></a></li>
-								<li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Publications</span></a></li>
+								<li><a href="#research" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-cubes">Research</span></a></li>
+								<li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Publications</span></a></li>
 <!--								<li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Projects</span></a></li> -->
 								<li><a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Experience</span></a></li>
 							</ul>
@@ -72,8 +75,8 @@
 					<!-- Social Icons -->
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/pub/cao-gao/37/511/85b" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://scholar.google.com/citations?user=_UH4xWQAAAAJ&hl=en" class="icon fa-google_scholar"><span class="label">Google Scholar</span></a></li>
-							<li><a href="mailto:caogao@umich.edu" class="icon fa-email"><span class="label">Email</span></a></li>
+							<li><a href="https://scholar.google.com/citations?user=_UH4xWQAAAAJ&hl=en" class="icon fa-google"><span class="label">Google Scholar</span></a></li>
+							<li><a href="mailto:caogao@umich.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 				
 				</div>
@@ -86,21 +89,69 @@
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
 						<div class="container">
+<!--
 								<header>
 								<h3 class="alt">Hi!
+								<h3>Hi!<br></h3>
 								</header>
-								I am a Ph.D student in the Computer Science and Engineering Department at the University of Michigan. I am advised by Prof. Trevor Mudge in the Advanced Computer Architecture Lab. <br>
+-->
+								I am a Ph.D student in the 
+								<a href="http://cse.umich.edu">Department of Computer Science and Engineering</a> at the <a href="http://www.umich.edu/" target="_blank">University of Michigan</a>. 
+								I am advised by Prof. <a href="http://web.eecs.umich.edu/~tnm">Trevor Mudge</a> in the <a href="http://www.eecs.umich.edu/celab/"> Computer Engineering Lab</a>. <br>
+								Prior to that, I received my my M.S.E degree in Computer Engineering from the <a href="http://www.umich.edu/" target="_blank">University of Michigan</a> 
+								and B.S.E degree in Electrical Engineering from <a href="http://www.zju.edu.cn/english">Zhejiang University</a>, China.<br>
 								My research interest lies in mobile systems, performance analysis and user experience in general. <br>
-								You can find my resume <a href="resume.pdf">here</a>
+								You can find my resume <a href="resume.pdf">here.</a>
 <!--							<footer>
 								<a href="#education" class="button scrolly">Magna Aliquam</a>
 							</footer> -->
 
 						</div>
 					</section>
-					
+			
+				<!-- Research -->
+					<section id="research" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Research</h2>
+							</header>
+
+							My research interests include analyzing current and emeraging mobile workloads, 
+							and designing mobile systems that achieve both good energy-efficiency and user experience. <br>
+
+							In the past several years, the number of CPU cores in mobile device SoCs are fastly increasing.
+							However, increasing the number does not necessarily translate into performance gain and power reduction portionally.
+							We analyze the behavior of a broad range of commonly used mobile applications on real devices. 
+							The results studies reveal a gap between current mobile software and hardware, and suggest that having many powerful cores is over-provisioning. <br>
+
+							Motivated by that, I am looking deeper into how future mobile device should be designed. 
+							Further analysis of TLP behavior and core energy efficiency suggests that current mobile workloads can benefit from an architecture that has the flexibility to accommodate both high performance and good energy-efficiency for different application phases. <br>
+
+							I am interested and have participated in other computer architecture topics and projects as well, including deep neural network implementation, energy-efficient GPGPU architecture, and fault tolerance Networks-on-Chip designs. <br>
+
+						</div>
+					</section>
+
+				<!-- Publications -->
+					<section id="publications" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Publications</h2>
+							</header>
+
+							<p><b><i>Cao Gao</b></i>, Anthony Gutierrez, Madhav Rajan, Ronald G. Dreslinski, Trevor Mudge, and Carole-Jean Wu. A Study of Mobile Device Utilization. 2015 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), March 2015. <br>
+							[Paper: <a href="ispass_15.pdf">here</a>][Talk: <a href="ispass_15_talk.pdf">here</a>] </p>
+							<p><b><i>Cao Gao</b></i>, Anthony Gutierrez, Ronald G. Dreslinski, Trevor Mudge, Krisztian Flautner, and Geoffery Blake. A Study of Thread Level Parallelism on Mobile Devices. 2014 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), March 2014. [Poster and text]<br>
+							[Paper: <a href="ispass_14.pdf">here</a>]</p>
+
+						</div>
+					</section>
+
+
 				<!-- Education -->
-					<section id="education" class="two">
+<!--					<section id="education" class="two">
 						<div class="container">
 					
 							<header>
@@ -109,11 +160,10 @@
 							
 							<ul>
 							<li>Ph.D. , Computer Science and Engineering, University of Michigan, Ann Arbor, MI 2014.1 – 2017.5 (Expected)<br>
-							Area of Specialization: Computer Engineering --- Hardware Advisor: Prof. Trevor Mudge</li>
-							<li> M.S., Computer Science and Engineering, University of Michigan, Ann Arbor, MI 2012.9 – 2013.12 Overall GPA: 4.0/4.0 </li>
+							<li> M.S., Computer Science and Engineering, University of Michigan, Ann Arbor, MI 2012.9 – 2013.12 </li>
 							<li> B.Eng. , College of Electrical Engineering, Zhejiang University, Hangzhou, Zhejiang, China 2008.9 – 2012.6 </li>
 			                </ul>
-
+-->
 <!--							<div class="row">
 								<div class="4u">
 									<article class="item">
@@ -158,52 +208,24 @@
 									</article>
 								</div>
 							</div>
--->
-
-						</div>
-					</section>
-
-				<!-- Publications -->
-					<section id="publications" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Publications</h2>
-							</header>
-
-							<p>Cao Gao, Anthony Gutierrez, Madhav Rajan, Ronald G. Dreslinski, Trevor Mudge, and Carole-Jean Wu. A Study of Mobile Device Utilization. 2015 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), March 2015. <br>
-							[Paper: <a href="ispass_15.pdf">here</a>][Talk: <a href="ispass_15_talk.pdf">here</a>] </p>
-							<p>Cao Gao, Anthony Gutierrez, Ronald G. Dreslinski, Trevor Mudge, Krisztian Flautner, and Geoffery Blake. A Study of Thread Level Parallelism on Mobile Devices. 2014 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS), March 2014. [Appear as a poster abstract]<br>
-							[Paper: <a href="ispass_14.pdf">here</a>]</p>
-
-						</div>
-					</section>
-			
-				<!-- Projects -->
-<!--					<section id="projects" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Projects</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-							
-							<p>TLP</p>
-							<p>NOC</p>
 
 						</div>
 					</section>
 -->
+
 				<!-- Experience -->
 					<section id="experience" class="four">
 						<div class="container">
 
 							<header>
 								<h2>Experience</h2>
-							</header>
-
-							<p>ARM Ltd., Ausitn, TX 2014.6 - 2014.8</p>
+							</header>  
+							<ul class="test"> 
+                            <li> Interned at <a href="http://www.arm.com">ARM</a> Austin, TX during summer 2014. <br> </li>
+                            <li> Programming in C, C++, Python and Verilog </li>
+                           	<li> Familiar with Linux and Anroid environments </li>
+                           	<li> Fluent in English, native Mandarin speaker </li>
+						</ul>
 
 						</div>
 					</section>
@@ -215,7 +237,7 @@
 				
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>Last updated: Mar 2015 &copy; Cao Gao 2015. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Last updated: Jun 2015 &copy; Cao Gao 2015. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				
 			</div>

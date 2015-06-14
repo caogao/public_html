@@ -215,6 +215,14 @@
 				width: 100%;
 			}
 			
+			.image.16px
+			{
+				width: 16px;
+				height: 16px;
+				background: #f00;
+				display: block;
+				width: 100%;
+			}
 			.image.avatar48
 			{
 				width: 48px;
@@ -226,6 +234,19 @@
 				{
 					width: 48px;
 					height: 48px;
+				}
+
+			.image.avatar160
+			{
+				width: 160px;
+				height: 140px;
+				background: #f00;
+			}
+			
+				.image.avatar96 img
+				{
+					width: 160px;
+					height: 140px;
 				}
 
 			.image.fit
@@ -275,7 +296,12 @@
 				{
 					padding-left: 0.5em;
 				}		
-
+			ul.test
+			{
+				list-style: disc;
+				margin: 0 0 2.25em 0;
+				padding-left: 1em;
+			}
 			ul.icons
 			{
 				cursor: default;
@@ -788,6 +814,7 @@
 				text-align: left;
 				background-color: #f5fafa;
 				margin: 2em;
+				font-size: 0.8em;
 			}
 		
 			#main > section.three
@@ -795,6 +822,7 @@
 				text-align: left;
 				background-color: #ecf1f1;
 				margin: 2em;
+				font-size: 0.8em;
 			}
 		
 			#main > section.four
@@ -802,4 +830,5 @@
 				text-align: left;
 				background-color: #e8edec;
 				margin: 2em;
+				font-size: 0.8em;
 			}
